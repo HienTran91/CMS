@@ -1,0 +1,97 @@
+brand	
+	brandID
+	brandName
+	address
+	phoneNumber
+	managerID (userID)
+
+User	
+	brandID
+	userID
+	password
+	role
+	name
+	dOB
+	phoneNumber
+	address
+	specialize
+
+
+customer	
+	brandID
+	customerID
+	customerName
+	dOB
+	phoneNumber
+	address
+	source
+	fingerprint
+	medicalBiography
+
+
+relationship	
+	customerID1
+	customerID2
+	relationship
+
+calendarDentist	
+	brandID
+	userID
+	time
+
+
+calendarAppointment	
+	brandID
+	userID
+	customerID
+	time
+	estimatedTime
+	estimatedDifficulty
+	content
+	status
+	note
+
+
+treatment	
+	brandID
+	userID
+	customerID
+	treatmentID
+	time
+	describe
+	totalPayment
+
+treatmentDetail	
+	treatmentID
+	treatmentDetailID
+	time
+	content
+	price
+
+invoice	
+	brandID
+	userID
+	customerID
+	treatmentID
+	invoiceID
+	pay
+
+inventory	
+	brandID
+	itemID
+	itemName
+	unit
+	quantity
+	
+labo	
+	brandID
+	laboName
+	address
+	phoneNumber
+
+treatmentDetailLabo	
+	laboID
+	treatmentID
+	sendDay
+	receivedDay
+	price

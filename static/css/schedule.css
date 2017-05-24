@@ -1,0 +1,214 @@
+.sche-content{
+	padding: 0px;
+	margin: 0px;
+}
+/*header*/
+.sche-header-title{
+	clear:both;
+	width: 100%;
+	/*position: relative;*/
+	/*display: inline;*/
+}
+.sche-title{
+	display: table-cell;
+	padding: 5px 20px;
+	background-color: #343434;
+	color: #FFF; 
+	border-radius: 4px; 
+	position: relative;
+}
+.sche-title > p{
+	margin: 4px 0;
+}
+.left{
+	/*position: absolute;*/
+	width: 30%;
+	min-width: 200px;
+	max-width: 250px;
+}
+.right{
+	/*position: relative;*/
+	/*right: 0px;*/
+	width: 1000px;
+	min-width: 850px;
+}
+.aligment-left{
+	position: absolute;
+	left: 0;
+	padding: 4px 15px;
+}
+.aligment-right{
+	position: absolute;
+	right: 0;
+	padding: 4px 20px;
+}
+/*endherder*/
+
+/*content*/
+.sche-infor-danish{ 
+	max-height: 300px;
+	overflow-y: scroll;
+	overflow-x: hidden; 
+	position: relative;
+}
+.sche-danish{
+	clear:both;
+	width: 100%;
+}
+
+.sche-infor{
+	display: table-cell;
+	padding: 5px 20px;
+	/*display: none;*/
+}
+.sche-icon-infor{
+	font-size: 35px;
+    position: absolute;
+}
+.sche-user-infor{
+	position: relative;
+	left: 45px;
+	top: 7px;
+}
+.sche-user-infor .sche-name-infor{
+	margin: 0px;
+    position: relative;
+    font-size: 16px;
+}
+.sche-user-infor .sche-special-infor{
+	font-size: 10px;
+	/*color: #95a5a6;*/
+}
+.week{
+	background-color: #5bc0de; 
+}
+.day{
+	background-color: hsl(128, 78%, 32%); 
+}
+.sche-axis-dn{
+	position: relative;
+	
+}
+.sche-axis-dn > .axis-dn{
+	position: absolute;
+	border-bottom: solid 1px #95a5a6;
+    padding-bottom: 35px;
+    left: 45px;
+    width: 800px;
+    top: 7px;
+}
+
+div.sche-week-dn:hover, .sche-dn-week-active{
+	color: #5bc0de;
+    border-left: solid 5px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 0; 
+    padding: 5px 15px;
+}
+div.sche-day-dn:hover, .sche-dn-day-active{
+	color: hsl(128, 78%, 32%);
+    border-left: solid 5px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 0; 
+    padding: 5px 15px;
+}
+.sche-calendar{
+	position: relative;
+    left: 45px;		
+}
+.sche-woking{
+	display: inline;
+    width: 36px;
+    font-size: 10px;
+    position: absolute;
+    top: 2px;
+    border-radius: 5px;
+    padding: 7px 5px;
+    color: #FFF;
+    background-color: #5bc0de;
+    text-align: center;
+    border: solid 1px;
+    -moz-box-shadow: 1px 0px 4px 1px rgba(5, 19, 16, 0.54);
+    -webkit-box-shadow: 1px 0px 4px 1px rgba(5, 19, 16, 0.54);
+    box-shadow: 1px 0px 4px 1px rgba(5, 19, 16, 0.54);
+}
+
+.sche-infor-danish > .sche-add-danish{
+    position: absolute;
+    right: 50px;
+    top: 7px;
+    z-index: 999;
+}
+.sche-show-day, .sche-show-week{
+	display: none;
+}
+.sche-axis-active{
+	display: table-cell;
+}
+/*endcontent*/
+
+/*footer*/
+.sche-foster{
+	clear:both;
+	width: 100%;
+	padding: 15px 0px;
+}
+.sche-foster > .sche-day{
+	display: table-cell;
+	border-top: solid 3px #5bc0de;
+	border-bottom: solid 3px #5bc0de;
+	position: relative;
+	text-align: center;
+}
+.sche-foster > .sche-day > strong{
+	position: relative;
+    
+}
+.sche-foster > .sche-back{
+	background-color:  #5bc0de;
+	color: #FFF;
+	font-size: 20px;
+	padding: 10px;
+}
+.sche-axis{
+	color: hsl(194, 66%, 61%);
+    min-width: 525px;
+    position: absolute;
+    left: 60px;
+}
+.sche-time{
+	border-left: solid 2px;
+    display: inline;
+    padding: 5px 29px;
+    position: relative;
+    top: -12px;
+}
+.sche-time > span{
+	position: relative;
+    top: 25px;
+    left: -45px;
+}
+.sche-axis-free{
+	width: 20px;
+}
+
+.sche-axis-right{
+	position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+.sche-shift{
+	position: absolute;
+}
+.sche-perform{
+    position: relative;
+    border-bottom: solid 2px #129123;
+	width: 550px;     
+	left: 5px;     
+	top: 25px; 
+}
+
+/*endfooter*/

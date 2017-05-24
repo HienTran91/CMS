@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="jumbotron">
+            {% if 'name' in request.session: %}
+            	{{print request.session['name']}}
+        </div>
+    </div>
+</div>
+{% endblock %}

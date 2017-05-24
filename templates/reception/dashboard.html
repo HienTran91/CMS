@@ -1,0 +1,735 @@
+{% extends 'base.html' %}
+
+{% block menu %}
+	<ul class="nav navbar-nav" role="tablist">						
+		<li class="active"><a href="{% url 'dashboard' %}"><i class="fa fa-globe" aria-hidden="true"></i> Dashboard</a></li>
+
+		<li><a href="{% url 'schedule' %}"><i class="fa fa-calendar" aria-hidden="true"></i> Schedule</a></li>
+
+		<li ><a href="{% url 'management' %}"><i class="fa fa-sitemap" aria-hidden="true"></i> Management</a></li>
+
+		<li><a href="{% url 'laboratory' %}"><i class="fa fa-compass" aria-hidden="true"></i> Laboratory</a></li>
+	</ul>	
+{% endblock %}
+
+{% block content %}
+	<div class="row">
+		<div class="col-md-4 dash-div-center" > 
+			<div class="btn-group">
+				<button type="button" class="btn btn-info" >Chuẩn bị</button>
+				<button type="button" class="btn btn-info">Đang xử lý</button>
+				<button type="button" class="btn btn-info">Theo dõi</button>
+			</div>
+			<div>
+				<div class="dash-customer-list">
+					<div class="dash-lef-info">
+						<div class="dash-customer">
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>	
+						</div>
+						<div class="dash-customer dash-customer-info">
+							<p class="dash-customer-name"> Ms.Phạm Tú(56)</p>
+							<p class="dash-customer-service">face-care</p>
+						</div>	
+						<div class="dash-customer dash-customer-status dash-customer-status-ready">
+							Ready
+						</div>
+						<div class="dash-customer dash-customer-time">
+							09:00
+						</div>
+						<div class="dash-customer dash-customer-timedelay">
+							30/30/30
+						</div>
+					</div>
+					<div class="dash-lef-info">
+						<div class="dash-customer">
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>	
+						</div>
+						<div class="dash-customer dash-customer-info">
+							<p class="dash-customer-name"> Ms.Phạm Tú(56)</p>
+							<p class="dash-customer-service">face-care</p>
+						</div>	
+						<div class="dash-customer dash-customer-status dash-customer-status-ready">
+							Ready
+						</div>
+						<div class="dash-customer dash-customer-time">
+							09:00
+						</div>
+						<div class="dash-customer dash-customer-timedelay">
+							30/30/30
+						</div>
+					</div>
+					<div class="dash-lef-info">
+						<div class="dash-customer">
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>	
+						</div>
+						<div class="dash-customer dash-customer-info">
+							<p class="dash-customer-name"> Ms.Phạm Tú(56)</p>
+							<p class="dash-customer-service">face-care</p>
+						</div>	
+						<div class="dash-customer dash-customer-status dash-customer-status-ready">
+							Ready
+						</div>
+						<div class="dash-customer dash-customer-time">
+							09:00
+						</div>
+						<div class="dash-customer dash-customer-timedelay">
+							30/30/30
+						</div>
+					</div>
+					<div class="dash-lef-info">
+						<div class="dash-customer">
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>	
+						</div>
+						<div class="dash-customer dash-customer-info">
+							<p class="dash-customer-name"> Ms.Phạm Tú(56)</p>
+							<p class="dash-customer-service">face-care</p>
+						</div>	
+						<div class="dash-customer dash-customer-status dash-customer-status-ready">
+							Ready
+						</div>
+						<div class="dash-customer dash-customer-time">
+							09:00
+						</div>
+						<div class="dash-customer dash-customer-timedelay">
+							30/30/30
+						</div>
+					</div>
+					<div class="dash-lef-info">
+						<div class="dash-customer">
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>	
+						</div>
+						<div class="dash-customer dash-customer-info">
+							<p class="dash-customer-name"> Ms.Phạm Tú(56)</p>
+							<p class="dash-customer-service">face-care</p>
+						</div>	
+						<div class="dash-customer dash-customer-status dash-customer-status-ready">
+							Ready
+						</div>
+						<div class="dash-customer dash-customer-time">
+							09:00
+						</div>
+						<div class="dash-customer dash-customer-timedelay">
+							30/30/30
+						</div>
+					</div>
+					<div class="dash-lef-info">
+						<div class="dash-customer">
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>	
+						</div>
+						<div class="dash-customer dash-customer-info">
+							<p class="dash-customer-name"> Ms.Phạm Tú(56)</p>
+							<p class="dash-customer-service">face-care</p>
+						</div>	
+						<div class="dash-customer dash-customer-status dash-customer-status-ready">
+							Ready
+						</div>
+						<div class="dash-customer dash-customer-time">
+							09:00
+						</div>
+						<div class="dash-customer dash-customer-timedelay">
+							30/30/30
+						</div>
+					</div>
+					<!-- <div class="dash-lef-info">
+						<div class="dash-customer">
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>	
+						</div>
+						<div class="dash-customer dash-customer-info">
+							<p class="dash-customer-name"> Ms.Phạm Tú(56)</p>
+							<p class="dash-customer-service">face-care</p>
+						</div>	
+						<div class="dash-customer dash-customer-status dash-customer-status-ready">
+							Ready
+						</div>
+						<div class="dash-customer dash-customer-time">
+							09:00
+						</div>
+						<div class="dash-customer dash-customer-timedelay">
+							30/30/30
+						</div>
+					</div>
+					<div class="dash-lef-info">
+						<div class="dash-customer">
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>	
+						</div>
+						<div class="dash-customer dash-customer-info">
+							<p class="dash-customer-name"> Ms.Phạm Tú(56)</p>
+							<p class="dash-customer-service">face-care</p>
+						</div>	
+						<div class="dash-customer dash-customer-status dash-customer-status-ready">
+							Ready
+						</div>
+						<div class="dash-customer dash-customer-time">
+							09:00
+						</div>
+						<div class="dash-customer dash-customer-timedelay">
+							30/30/30
+						</div>
+					</div>
+					<div class="dash-lef-info">
+						<div class="dash-customer">
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>	
+						</div>
+						<div class="dash-customer dash-customer-info">
+							<p class="dash-customer-name"> Ms.Phạm Tú(56)</p>
+							<p class="dash-customer-service">face-care</p>
+						</div>	
+						<div class="dash-customer dash-customer-status dash-customer-status-ready">
+							Ready
+						</div>
+						<div class="dash-customer dash-customer-time">
+							09:00
+						</div>
+						<div class="dash-customer dash-customer-timedelay">
+							30/30/30
+						</div>
+					</div>
+					 -->
+					
+				</div>
+				  <!-- <tr>
+					<td>
+						<div>
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+							<div class="dash-customer-info">
+								<p class="dash-customer-name">Ms.Hoàng Hà(12)</p>
+								<p class="dash-customer-service">face-care</p>
+							</div>	
+						</div>
+					</td>
+					<td><div class="dash-customer-status-checked">Checked</div></td>
+					<td><div class="dash-customer-time">09:30</div></td>
+					<td>
+				  </tr>
+				  <tr>
+					<td>
+						<div>
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+							<div class="dash-customer-info">
+								<p class="dash-customer-name"></span> Ms.Phạm Tú(56)</p>
+								<p class="dash-customer-service">face-care</p>
+							</div>
+						</div> 
+					</td>
+					<td><div class="dash-customer-status-onway">On way</div></td>
+					<td><div class="dash-customer-time"> 10:00</div></td>
+					<td><div class="dash-customer-timedelay">30/30/30</div></td>
+				  </tr>
+				  <tr>
+					<td>
+						<div>
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+							<div class="dash-customer-info">
+								<p class="dash-customer-name"></span> Ms.Phạm Tú(56)</p>
+								<p class="dash-customer-service">face-care</p>
+							</div>
+						</div> 
+					</td>
+					<td><div class="dash-customer-status-onway">On way</div></td>
+					<td><div class="dash-customer-time"> 10:00</div></td>
+					<td><div class="dash-customer-timedelay">30/30/30</div></td>
+				  </tr>
+				  <tr>
+					<td>
+						<div>
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+							<div class="dash-customer-info">
+								<p class="dash-customer-name"></span> Ms.Phạm Tú(56)</p>
+								<p class="dash-customer-service">face-care</p>
+							</div>
+						</div> 
+					</td>
+					<td><div class="dash-customer-status-onway">On way</div></td>
+					<td><div class="dash-customer-time"> 10:00</div></td>
+					<td><div class="dash-customer-timedelay">30/30/30</div></td>
+				  </tr>
+				  <tr>
+					<td>
+						<div>
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+							<div class="dash-customer-info">
+								<p class="dash-customer-name"></span> Ms.Phạm Tú(56)</p>
+								<p class="dash-customer-service">face-care</p>
+							</div>
+						</div> 
+					</td>
+					<td><div class="dash-customer-status-onway">On way</div></td>
+					<td><div class="dash-customer-time"> 10:00</div></td>
+					<td><div class="dash-customer-timedelay">30/30/30</div></td>
+				  </tr>
+				  <tr>
+					<td>
+						<div>
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+							<div class="dash-customer-info">
+								<p class="dash-customer-name"></span> Ms.Phạm Tú(56)</p>
+								<p class="dash-customer-service">face-care</p>
+							</div>
+						</div> 
+					</td>
+					<td><div class="dash-customer-status-onway">On way</div></td>
+					<td><div class="dash-customer-time"> 10:00</div></td>
+					<td><div class="dash-customer-timedelay">30/30/30</div></td>
+				  </tr>
+				  <tr>
+					<td>
+						<div>
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+							<div class="dash-customer-info">
+								<p class="dash-customer-name"></span> Ms.Phạm Tú(56)</p>
+								<p class="dash-customer-service">face-care</p>
+							</div>
+						</div> 
+					</td>
+					<td><div class="dash-customer-status-onway">On way</div></td>
+					<td><div class="dash-customer-time"> 10:00</div></td>
+					<td><div class="dash-customer-timedelay">30/30/30</div></td>
+				  </tr>
+				  <tr>
+					<td>
+						<div>
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+							<div class="dash-customer-info">
+								<p class="dash-customer-name"></span> Ms.Phạm Tú(56)</p>
+								<p class="dash-customer-service">face-care</p>
+							</div>
+						</div> 
+					</td>
+					<td><div class="dash-customer-status-onway">On way</div></td>
+					<td><div class="dash-customer-time"> 10:00</div></td>
+					<td><div class="dash-customer-timedelay">30/30/30</div></td>
+				  </tr>
+				  <tr>
+					<td>
+						<div>
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+							<div class="dash-customer-info">
+								<p class="dash-customer-name"></span> Ms.Phạm Tú(56)</p>
+								<p class="dash-customer-service">face-care</p>
+							</div>
+						</div> 
+					</td>
+					<td><div class="dash-customer-status-onway">On way</div></td>
+					<td><div class="dash-customer-time"> 10:00</div></td>
+					<td><div class="dash-customer-timedelay">30/30/30</div></td>
+				  </tr>
+				  <tr>
+					<td>
+						<div>
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+							<div class="dash-customer-info">
+								<p class="dash-customer-name"></span> Ms.Phạm Tú(56)</p>
+								<p class="dash-customer-service">face-care</p>
+							</div>
+						</div> 
+					</td>
+					<td><div class="dash-customer-status-onway">On way</div></td>
+					<td><div class="dash-customer-time"> 10:00</div></td>
+					<td><div class="dash-customer-timedelay">30/30/30</div></td>
+				  </tr>
+				  <tr>
+					<td>
+						<div>
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+							<div class="dash-customer-info">
+								<p class="dash-customer-name"></span> Ms.Phạm Tú(56)</p>
+								<p class="dash-customer-service">face-care</p>
+							</div>
+						</div> 
+					</td>
+					<td><div class="dash-customer-status-onway">On way</div></td>
+					<td><div class="dash-customer-time"> 10:00</div></td>
+					<td><div class="dash-customer-timedelay">30/30/30</div></td>
+				  </tr>
+				  <tr>
+					<td>
+						<div>
+							<span class="dash-customer-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+							<div class="dash-customer-info">
+								<p class="dash-customer-name"></span> Ms.Phạm Tú(56)</p>
+								<p class="dash-customer-service">face-care</p>
+							</div>
+						</div> 
+					</td>
+					<td><div class="dash-customer-status-onway">On way</div></td>
+					<td><div class="dash-customer-time"> 10:00</div></td>
+					<td><div class="dash-customer-timedelay">30/30/30</div></td>
+				  </tr>
+
+				</tbody>
+			  </table> -->
+			</div>
+		</div>
+		<div class="col-md-8"> 
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<div>
+						<span>Lịch hẹn</span>
+					</div>
+				</div>
+				<div class="panel-body">
+					<div>
+						<table >
+							<tbody>
+								<tr>
+									<td class="col-md-1">
+										<div style="position: absolute;">
+											<span class="dash-detail-icon"><i class="fa fa-chevron-left" style="font-size: 20px" aria-hidden="true"></i><i class="fa fa-chevron-right" style="font-size: 20px" aria-hidden="true"></i></span>
+										</div>
+										<div style="position: relative; left: 30px">
+											<p>027</p>
+										</div>
+									</td>
+									<td class="col-md-3">
+										<div>
+											<span class="dash-doctor-icon"><i class="fa fa-user-circle" style="font-size: 28px" aria-hidden="true"></i></span>
+											<div class="dash-doctor-info">
+												<p class="dash-doctor-name"></span> Dr.Ngọc Anh</p>
+												<p class="dash-doctor-service">Chỉnh nha, dvbc</p>
+											</div>	
+										</div>		
+									</td>
+									<td class="col-md-1">
+										<div style="position: absolute; margin-top: 0px">
+											<input type="checkbox" name="task" id="task1">
+										</div>
+										<div style="position: relative; left: 20px; padding-top: 0px">
+											<label for="task1"> Làm mới</label>
+										</div>
+										
+									</td>
+									<td class="col-md-3">
+										<p>Cạo vôi- 2 hàm</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="col-md-1">
+										<div style="position: absolute;">
+											<span class="dash-detail-icon"><i class="fa fa-clock-o" style="font-size: 25px;" aria-hidden="true"></i></span>
+										</div>
+										<div style="position: relative; left: 30px">
+											<p>09:30</p>	
+										</div>
+										
+									</td>
+									<td class="col-md-3">
+										<div style="position: absolute;">
+											<span><i class="fa fa-calendar" style="font-size: 25px;" aria-hidden="true"></i></span>	
+										</div>
+										<div style="position: relative; left: 40px">
+											<p>28/02/2017</p>
+										</div>
+										
+									</td>
+									<td class="col-md-1">
+										<div>
+											<input type="checkbox" name="task" id="task2"><label for="task2"> Tiếp tục</label>	
+										</div>
+									</td>
+									<td class="col-md-3">
+										<div>
+											<p>Chỉnh nha - hàm trên</p>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">Thông tin khách hàng</div>
+				<div class="panel-body">
+					<table class="table" style="margin-bottom: 0px;">
+						<tr>
+							<td>
+								<div>
+									<table class="table table-striped" >
+										<thead>
+											<tr><th colspan="2">Thông tin cá nhân</th></tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													Tên
+												</td>
+												<td>
+													Mr. Hoàng Đức Thịnh
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Tuổi
+												</td>
+												<td>
+													10/05/1991 (26)
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Điện thoại
+												</td>
+												<td>
+													0906 886 862
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Nghề nghiệp
+												</td>
+												<td>
+													Nhân viên văn phòng
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							
+							<td>
+								<div >
+									<div style="height: 37px;">
+									
+									<p style="font-weight: bold; padding: 8px; ">Lịch sử dùng dịch vụ </p>
+									</div>	
+									
+									<table class="table table-striped" style="margin-bottom: 0px;">
+									
+										<tbody style="overflow-y:auto; height: 230px; float: left; ">
+											<tr>
+												<td>
+													18/03/2017
+												</td>
+												<td>
+													Chỉnh nha UP  asd adas asd
+												</td>
+												<td>
+													<div class="dash-process-status-inpro">
+														In Pro
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													1/03/2017
+												</td>
+												<td>
+													Nhổ răng 17
+												</td>
+												<td>
+													<div class="dash-process-status-done">
+														Done	
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													18/02/2017
+												</td>
+												<td>
+													Nha chu UP
+												</td>
+												<td>
+													<div class="dash-process-status-warrt">
+														Warrt	
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													18/01/2017
+												</td>
+												<td>
+													Cạo vôi
+												</td>
+												<td>
+													<div  class="dash-process-status-done">
+														Done
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													18/01/2017
+												</td>
+												<td>
+													Cạo vôi
+												</td>
+												<td>
+													<div  class="dash-process-status-done">
+														Done
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													18/01/2017
+												</td>
+												<td>
+													Cạo vôi
+												</td>
+												<td>
+													<div  class="dash-process-status-done">
+														Done
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													18/01/2017
+												</td>
+												<td>
+													Cạo vôi
+												</td>
+												<td>
+													<div  class="dash-process-status-done">
+														Done
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													18/01/2017
+												</td>
+												<td>
+													Cạo vôi
+												</td>
+												<td>
+													<div  class="dash-process-status-done">
+														Done
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													18/01/2017
+												</td>
+												<td>
+													Cạo vôi
+												</td>
+												<td>
+													<div  class="dash-process-status-done">
+														Done
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													18/01/2017
+												</td>
+												<td>
+													Cạo vôi
+												</td>
+												<td>
+													<div  class="dash-process-status-done">
+														Done
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													18/01/2017
+												</td>
+												<td>
+													Cạo vôi
+												</td>
+												<td>
+													<div  class="dash-process-status-done">
+														Done
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													18/01/2017
+												</td>
+												<td>
+													Cạo vôi
+												</td>
+												<td>
+													<div  class="dash-process-status-done">
+														Done
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													18/01/2017
+												</td>
+												<td>
+													Cạo vôi
+												</td>
+												<td>
+													<div  class="dash-process-status-done">
+														Done
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													18/01/2017
+												</td>
+												<td>
+													Cạo vôi
+												</td>
+												<td>
+													<div  class="dash-process-status-done">
+														Done
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													18/01/2017
+												</td>
+												<td>
+													Cạo vôi
+												</td>
+												<td>
+													<div  class="dash-process-status-done">
+														Done
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							
+							<td>
+								<div>
+									<table class="table table-striped">
+										<thead>
+											<tr><th>Thông tin cá nhân</th></tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													Cao huyết áp
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Viêm xoang
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Dị ứng
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- <div role="tabpanel" class="tab-pane active" id="dashboard">Dash</div>
+		<div role="tabpanel" class="tab-pane" id="schedule">schu</div>
+		<div role="tabpanel" class="tab-pane" id="management">mana</div>
+		<div role="tabpanel" class="tab-pane" id="laboratory">labo</div> -->
+	</div>
+{% endblock %}

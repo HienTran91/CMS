@@ -1,0 +1,168 @@
+table>tbody>tr>td{
+    border: none;
+}
+#searchForm{
+  /* The search form. */
+  position:relative;
+  -moz-border-radius:16px;
+  -webkit-border-radius:16px;
+  border-radius:16px;
+}
+div.input-append{
+	padding: 15px;
+}
+.input-append > .search-query{
+	border: solid 2px #3498db;
+    padding: 5px;
+    border-radius: 25px;
+    width: 300px;
+    padding-left: 35px;
+}
+.input-append > .icon-bar{
+	position: absolute;
+    top: 23px;
+    left: 27px;
+}
+fieldset{
+  border:none;
+}
+/*trang thang active và hover của 1 field*/
+table>tbody>tr>td.user-active{
+	color: hsl(128, 78%, 32%);
+    border-left: solid 10px;
+    position: relative;
+    left: -5px;
+}
+.sche-title-table{
+	min-width: 250px;
+}
+
+table>tbody>tr>td.dr-schedule:hover{
+	color: hsl(128, 78%, 32%);
+    border-left: solid 10px;
+    position: relative;
+    left: -5px;
+    cursor: pointer;
+}
+/*Ten nha sy*/
+.sche-left-infor{
+	position: relative;
+    left: 15px;
+}
+.sche-left-infor > .sche-icon-infor{
+	font-size: 35px;
+    position: absolute;
+    /* top: 10px; */
+}
+.sche-left-infor > .sche-user-infor{
+	position: relative;
+	left: 45px;
+	top: 7px;
+}
+.sche-left-infor > .sche-user-infor > .sche-name-infor{
+	margin: 0px;
+    position: relative;
+    font-size: 16px;
+}
+.sche-left-infor > .sche-user-infor > .sche-special-infor{
+	font-size: 10px;
+	/*color: #95a5a6;*/
+}
+table>tbody>tr>td.sche-day{
+	line-height: 45px;
+    text-align: center;
+    background-color: #129123;
+    color: #FFF;
+    border: solid 2px #129123;
+}
+/* Trục thơi gian- right content*/
+table>tbody>tr>td.sche-axis-main{
+	border-top: solid 2px #129123;
+	border-bottom: solid 4px #129123;
+}
+.sche-axis{
+	color: hsl(128, 78%, 32%);
+	min-width: 525px;
+	position: absolute;
+	left: 10%;
+}
+.sche-time{
+	border-left: solid 2px;
+    display: inline;
+    padding: 3px 20px;
+    position: relative;
+    top: -20px;
+}
+.sche-time > span{
+	position: relative;
+    top: 30px;
+    left: -30px;
+}
+.sche-axis-free{
+	width: 20px;
+}
+
+.active-time, .btn-time:hover{
+	background-color: 129123;
+	color: #FFF;
+}
+/*Thong tin lam viec cua bac sy*/
+/*trục làm việc trong ngày*/
+.sche-axis-doctor{ 
+	border-bottom: solid 1px #95a5a6;
+    padding-bottom: 35px;
+    display: none;
+}
+.sche-active-doctor{
+	display: block;
+}
+.sche-woking{
+	display: inline;
+    width: 36px;
+    font-size: 10px;
+    position: absolute;
+    top: 2px;
+    border-radius: 5px;
+    padding: 7px 5px;
+    color: #FFF;
+    background-color: #15a589;
+    text-align: center;
+    border: solid 1px;
+    -moz-box-shadow: 1px 0px 4px 1px rgba(5, 19, 16, 0.54);
+    -webkit-box-shadow: 1px 0px 4px 1px rgba(5, 19, 16, 0.54);
+    box-shadow: 1px 0px 4px 1px rgba(5, 19, 16, 0.54);
+}
+.sche-woking > span{
+	/*text-align: center;*/
+}
+/*.sche-haft-hour{
+	width: 36px;
+	background-color: #15a589;
+}
+
+.sche-one-hour{
+	background-color: #f39c12;
+	
+	text-shadow: 2px 2px 5px #129123;
+}
+.sche-one-hour > span{
+	padding: 0 16px;
+}*/
+
+.sche-shift{
+	position: absolute;
+
+} 
+.sche-perform{
+    position: relative;
+    border-bottom: solid 2px #129123;
+	width: 400px;     
+	left: 10%;     
+	top: 20px; 
+}
+.nav-pills > li.active:hover{
+	background-color: #129123;
+}
+.nav-pills > li.active > a{
+	background-color: #129123;
+}

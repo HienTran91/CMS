@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block menu %}
+	<ul class="nav navbar-nav">                        
+		<li><a href="{% url 'dashboard' %}"><i class="fa fa-globe" aria-hidden="true"></i> Dashboard</a></li>
+
+		<li class="active"><a href="{% url 'schedule' %}"><i class="fa fa-calendar" aria-hidden="true"></i> Schedule</a></li>
+
+		<li><a href="{% url 'management' %}"><i class="fa fa-sitemap" aria-hidden="true"></i> Management</a></li>
+
+		<li ><a href="{% url 'laboratory' %}"><i class="fa fa-compass" aria-hidden="true"></i> Laboratory</a></li> 
+	</ul>	
+{% endblock %}
+
+{% block content %}
+	
+	{% include "reception/schedule_day.html" %}
+
+	<div class="alert alert-success" role="alert">Nội dung cần thông báo</div>
+<!-- Lịch trong/ tuần -->
+	{% include "reception/schedule_week.html" %}
+
+{% endblock %}

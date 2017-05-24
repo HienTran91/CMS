@@ -1,0 +1,7 @@
+user:
+	superadmin	123456
+	dentist1	123456
+	dentist2	123456
+	reception	123456
+
+	admin	admin123456

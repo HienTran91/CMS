@@ -1,0 +1,13 @@
+Cài đặt các hàm hỗ trợ tính toán
+pip install django-mathfilters
+
+Cài đặt chạy scss
+
+pip install django-libsass
+thêm: 
+COMPRESS_PRECOMPILERS = (
+    ('text/x-scss', 'django_libsass.SassCompiler'),
+)
+{% compress css %}
+    <link rel="stylesheet" type="text/x-scss" href="{% static "myapp/css/main.scss" %}" />
+{% endcompress %}

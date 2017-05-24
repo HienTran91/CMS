@@ -1,0 +1,229 @@
+<div class="content">
+	<div class="swapper">
+		<div class="sche-content">	
+			<div class="sche-header-title">
+				<div class="sche-title left">
+					<p>Nha Sỹ</p>
+				</div>
+				<div class="sche-title right">
+					<div class="aligment-left">Lịch tuần</div>
+					<div class="aligment-right">
+						<form method="post" action="{% url 'schedule' %}">
+							<input class="btn btn-success btn-xs" name="t2" type="submit" value="Th2" />
+							<input class="btn btn-success btn-xs" name="t3" type="submit" value="Th3" />
+							<input class="btn btn-success btn-xs" name="t4" type="submit" value="Th4" />
+							<input class="btn btn-success btn-xs" name="t5" type="submit" value="Th5" />
+							<input class="btn btn-success btn-xs" name="t6" type="submit" value="Th6" />
+							<input class="btn btn-success btn-xs" name="t7" type="submit" value="Th7" />
+							<input class="btn btn-success btn-xs" name="cn" type="submit" value="CN" />
+						</form>
+					</div>
+					
+				</div>
+			</div>
+			<!--  -->
+			<div class="sche-infor-danish">
+				{% include "reception/add_danish.html" %}
+				
+				<!-- Nha sy 1 -->
+				<div id="week-dn-1" class="sche-danish">
+					<div class="sche-infor left sche-week-dn sche-dn-week-active">
+						<span class="sche-icon-infor"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+	            	 	<div class="sche-user-infor">
+	            	 		<p class="sche-name-infor"><strong>Dr. Tư Ròn</strong></p> 
+	            			<p class="sche-special-infor">Face-care</p>
+	            	 	</div>
+					</div>
+					<div class="sche-infor right sche-show-week sche-axis-active">
+						<dir class="sche-shift">
+            				<div class="sche-perform"></div>
+            			</dir>
+						<div class="sche-axis-dn"> 
+							<div class="axis-dn"></div>
+						</div>
+	                	<div class="sche-calendar">
+	                	<!-- vị trí mỗi mốc (giờ bắt đầu - 7) * 50 cho nữa giờ 
+								8h ->  50  = 50*1 => 1 = (8 - 8)/30 + 1 
+								8h30 -> 74 = 41 * 2 => 2 = (8h30 - 8)/30 + 1
+								9h -> 111	 = 41 *3 => => 30 = (9 - 8)/30 + 1
+							Chiều dài: = ((thời gian mỗi ca / 30) * 41) - 1
+							Tất cả tính bằng phút
+
+	                	-->
+	                    	<div class="sche-job-week-moorning sche-job-week tab-pane fade in active">
+	                    		<div class="sche-woking" style="left: 0px; width: {{ 149 }}px"><span>8pm</span></div>	
+	                    		
+	                    		<div class="sche-woking" style="left: 150px; width: 99px"><span>9pm</span></div>
+	                    		
+	                        </div>
+	                        <div class="sche-job-week-afternoon sche-job-week tab-pane fade">
+	                    		<div class="sche-woking" style="left: 0px; width: {{ 249 }}px"><span>15pm</span></div>	
+	                    		
+	                    		<div class="sche-woking" style="left: 300px; width: 99px"><span>16pm</span></div>
+	                    		
+	                        </div>
+	                  
+	                        <div class="sche-job-week-everning sche-job-week tab-pane fade">
+	                    		<div class="sche-woking" style="left: 0px; width: {{ 49 }}px"><span>20pm</span></div>	
+	                    		
+	                    		<div class="sche-woking" style="left: 150px; width: 99px"><span>22pm</span></div>
+	                    		
+	                        </div> 
+						</div>
+					</div>
+				</div>
+				<!-- het nha sy 1 -->
+				<!-- Nha sy 1 -->
+				<div id="week-dn-2" class="sche-danish">
+					<div class="sche-infor left sche-week-dn">
+						<span class="sche-icon-infor"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+	            	 	<div class="sche-user-infor">
+	            	 		<p class="sche-name-infor"><strong>Dr. Tư Ròn</strong></p> 
+	            			<p class="sche-special-infor">Face-care</p>
+	            	 	</div>
+					</div>
+					<div class="sche-infor right sche-show-week">
+						<dir class="sche-shift">
+            				<div class="sche-perform"></div>
+            			</dir>
+						<div class="sche-axis-dn"> 
+							<div class="axis-dn"></div>
+						</div>
+	                	<div class="sche-calendar">
+	                	<!-- vị trí mỗi mốc (giờ bắt đầu - 7) * 50 cho nữa giờ 
+								8h ->  50  = 50*1 => 1 = (8 - 8)/30 + 1 
+								8h30 -> 74 = 41 * 2 => 2 = (8h30 - 8)/30 + 1
+								9h -> 111	 = 41 *3 => => 30 = (9 - 8)/30 + 1
+							Chiều dài: = ((thời gian mỗi ca / 30) * 41) - 1
+							Tất cả tính bằng phút
+
+	                	-->
+	                    	<div class="sche-job-week-moorning sche-job-week tab-pane fade in active">
+	                    		<div class="sche-woking" style="left: 0px; width: {{ 149 }}px"><span>8pm</span></div>	
+	                    		
+	                    		<div class="sche-woking" style="left: 150px; width: 99px"><span>9pm</span></div>
+	                    		
+	                        </div>
+	                        <div class="sche-job-week-afternoon sche-job-week tab-pane fade">
+	                    		<div class="sche-woking" style="left: 0px; width: {{ 249 }}px"><span>15pm</span></div>	
+	                    		
+	                    		<div class="sche-woking" style="left: 300px; width: 99px"><span>16pm</span></div>
+	                    		
+	                        </div>
+	                  
+	                        <div class="sche-job-week-everning sche-job-week tab-pane fade">
+	                    		<div class="sche-woking" style="left: 0px; width: {{ 49 }}px"><span>20pm</span></div>	
+	                    		
+	                    		<div class="sche-woking" style="left: 150px; width: 99px"><span>22pm</span></div>
+	                    		
+	                        </div> 
+						</div>
+					</div>
+				</div>
+				<!-- het nha sy  -->
+				<!-- Nha sy 1 -->
+				<div id="week-dn-3" class="sche-danish">
+					<div class="sche-infor left sche-week-dn">
+						<span class="sche-icon-infor"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+	            	 	<div class="sche-user-infor">
+	            	 		<p class="sche-name-infor"><strong>Dr. Tư Ròn</strong></p> 
+	            			<p class="sche-special-infor">Face-care</p>
+	            	 	</div>
+					</div>
+					<div class="sche-infor right sche-show-week">
+						<dir class="sche-shift">
+            				<div class="sche-perform"></div>
+            			</dir>
+						<div class="sche-axis-dn"> 
+							<div class="axis-dn"></div>
+						</div>
+	                	<div class="sche-calendar">
+	                	<!-- vị trí mỗi mốc (giờ bắt đầu - 7) * 50 cho nữa giờ 
+								8h ->  50  = 50*1 => 1 = (8 - 8)/30 + 1 
+								8h30 -> 74 = 41 * 2 => 2 = (8h30 - 8)/30 + 1
+								9h -> 111	 = 41 *3 => => 30 = (9 - 8)/30 + 1
+							Chiều dài: = ((thời gian mỗi ca / 30) * 41) - 1
+							Tất cả tính bằng phút
+
+	                	-->
+	                    	<div class="sche-job-week-moorning sche-job-week tab-pane fade in active">
+	                    		<div class="sche-woking" style="left: 0px; width: {{ 149 }}px"><span>8pm</span></div>	
+	                    		
+	                    		<div class="sche-woking" style="left: 150px; width: 99px"><span>9pm</span></div>
+	                    		
+	                        </div>
+	                        <div class="sche-job-week-afternoon sche-job-week tab-pane fade">
+	                    		<div class="sche-woking" style="left: 0px; width: {{ 249 }}px"><span>15pm</span></div>	
+	                    		
+	                    		<div class="sche-woking" style="left: 300px; width: 99px"><span>16pm</span></div>
+	                    		
+	                        </div>
+	                  
+	                        <div class="sche-job-week-everning sche-job-week tab-pane fade">
+	                    		<div class="sche-woking" style="left: 0px; width: {{ 49 }}px"><span>20pm</span></div>	
+	                    		
+	                    		<div class="sche-woking" style="left: 150px; width: 99px"><span>22pm</span></div>
+	                    		
+	                        </div> 
+						</div>
+					</div>
+				</div>
+				<!-- het nha sy 1 -->
+			</div>
+			<div class="sche-foster">
+				<div class="sche-day sche-back left">
+					<strong>Th 3- 28/02/2017</strong>
+				</div>
+				<div class="sche-day right">
+					<div class="sche-axis-left">
+	        			<div id="sche-week-moorning" class="sche-work-week tab-pane fade in active">
+						    <div class="sche-axis">
+	                    		<div class="sche-time"><span>08am</span></div>	
+	                    		<div class="sche-time"><span>09am</span></div>
+	                    		<div class="sche-time"><span>10am</span></div>
+	                    		<div class="sche-time"><span>11am</span></div>
+	                    		<div class="sche-time"><span>12am</span></div>
+	                    		<div class="sche-time"><span>13pm</span></div>		
+	                    	</div>
+					    </div>
+					    <div id="sche-week-afternoon" class="sche-work-week tab-pane fade">
+					    	<div class="sche-axis">
+	                    		<div class="sche-time"><span>13pm</span></div>	
+	                    		<div class="sche-time"><span>14pm</span></div>
+	                    		<div class="sche-time"><span>15pm</span></div>
+	                    		<div class="sche-time"><span>16pm</span></div>
+	                    		<div class="sche-time"><span>17pm</span></div>
+	                    		<div class="sche-time"><span>18pm</span></div>		
+	                    	</div>
+					    </div>
+	                	<div id="sche-week-everning" class="sche-work-week tab-pane fade">
+					    	<div class="sche-axis">
+	                    		<div class="sche-time"><span>18pm</span></div>	
+	                    		<div class="sche-time"><span>19pm</span></div>
+	                    		<div class="sche-time"><span>20pm</span></div>
+	                    		<div class="sche-time"><span>21pm</span></div>
+	                    		<div class="sche-time"><span>22pm</span></div>
+	                    		<div class="sche-time"><span>23pm</span></div>		
+	                    	</div>
+					    </div>
+					</div>
+					<div class="sche-axis-right">
+						<ul class="nav nav-pills">
+							<li id = "week-moorning" class="active">
+								<a data-toggle="pill" href="#week-moorning" class="btn btn-info btn-group-sm">Sáng</a>
+							</li>
+							<li id = "week-afternoon">
+								<a data-toggle="pill" href="#week-afternoon" class="btn btn-info btn-group-sm">Chiều</a>
+							</li>
+							<li id = "week-everning">
+								<a data-toggle="pill" href="#week-everning" class="btn btn-info btn-group-sm">Tối</a>
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+	</div>	
+</div>
